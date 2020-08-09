@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | QuizTown</title>
+    <link rel="icon" href="public/images/favicon.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="/phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Itim&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://kit.fontawesome.com/a6d3a7fa97.js" crossorigin="anonymous"></script>
+    <style>
+        #score {
+            margin-left: 120px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+
+        #score p {
+            color: rgb(46, 80, 129);
+        }
+
+        #ins-btn {
+            margin-left: 0%;
+            width: 60%;
+        }
+        .no{
+            color:green;
+            font-size: 2rem;
+            margin: 0px;
+        }
+        .ni{
+            color:yellow;
+            font-size: 2em;
+            margin: 0px;
+        }
+        .in{
+            color:red;
+            font-size: 2rem;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <a id="logo" href="/"><img src="public/images/logo-new1.png" alt="Quiz Town"></a>
+        <ul>
+            <li><a href="/about">About</a></li>
+            <li><a href="/instruction">Start Now</a></li>
+            <!-- <li><a href="/register">Register Now</a></li> -->
+            <li><a href="/contact">Contact Us</a></li>
+            <!-- <a href=""><i class="fa fa-sign-out"></i></a> -->
+            <li class="dropdown">
+                <a class="dropbtn">Categories &nbsp; <i class="fa fa-chevron-circle-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="/instruction">Art and Literature</a>
+                    <a href="/instruction">General Knowledge</a>
+                    <a href="/instruction">Geography</a>
+                    <a href="/instruction">History</a>
+                    <a href="/instruction">Music</a>
+                    <a href="/instruction">Science and Nature</a>
+                    <a href="/instruction">Sport</a>
+                    <a href="/instruction">Tie Break</a>
+                    <a href="/instruction">TV and Films</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div id="c-h">
+        <h1 id="ch">Quizzes</h1>
+        <p>We bet to fantasize you with our Quizzes</p>
+    </div>
+
+
+    <h3 id="level-h">Select the Level of difficulty </h3>
+    <!-- <div id="cate-container"> -->
+    <form action="/quiz">
+        <select name="myLevel" id="levelValue">
+            <option value="1"> Level-1 </option>
+            <option value="2"> Level-2 </option>
+            <option value="3"> Level-3 </option>
+            <option value="4"> Level-4 </option>
+            <option value="5"> Level-5 </option>
+            <option value="6"> Level-6 </option>
+            <option value="7"> Level-7 </option>
+            <option value="8"> Level-8 </option>
+            <option value="9"> Level-9 </option>
+            <option value="10"> Level-10 </option>
+        </select>
+        <button id="start-cat" onclick="passValue()" type="submit">Start</button>
+    </form>
+
+    <div id="level-box">
+
+        <div id="box1" class="l-box">
+            <h2>Level 1</h2>
+            <p class="no">Normal</p>
+            <p id="1">maxScore:5</p>
+        </div>
+
+        <div id="box2" class="l-box">
+            <h2>Level 2</h2>
+            <p class="no">Normal</p>
+            <p id="2">maxScore:10</p>
+        </div>
+
+        <div id="box3" class="l-box">
+            <h2>Level 3</h2>
+            <p class="no">Normal</p>
+            <p id="3">maxScore:15</p>
+        </div>
+
+        <div id="box4" class="l-box">
+            <h2>Level 4</h2>
+            <p class="no">Normal</p>
+            <p id="4">maxScore:20</p>
+        </div>
+
+        <div id="box5" class="l-box">
+            <h2>Level 5</h2>
+            <p class="ni">Nightmare</p>
+            <p id="5">maxScore:25</p>
+        </div>
+
+        <div id="box6" class="l-box">
+            <h2>Level 6</h2>
+            <p class="ni">Nightmare</p>
+            <p id="6">maxScore:30</p>
+        </div>
+
+        <div id="box7" class="l-box">
+            <h2>Level 7</h2>
+            <p class="ni">Nightmare</p>
+            <p id="7">maxScore:35</p>
+        </div>
+
+        <div id="box8" class="l-box">
+            <h2>Level 8</h2>
+            <p class="ni">Nightmare</p>
+            <p id="8">maxScore:40</p>
+        </div>
+
+        <div id="box9" class="l-box">
+            <h2>Level 9</h2>
+            <p class="in">Insane</p>
+            <p id="9">maxScore:45</p>
+        </div>
+
+        <div id="box10" class="l-box">
+            <h2>Level 10</h2>
+            <p class="in">Insane</p>
+            <p id="10">maxScore:50</p>
+        </div>
+
+    </div>
+    <div id="back-ins">
+        <p>Not well-versed with Instructions</p>
+        <button class="start" id="ins-btn"><a href="/instruction">Back to Instructions<i
+                    class="fa fa-chevron-circle-left"></i></a></button>
+    </div>
+
+
+    <!-- <hr>
+        <section id="review">
+        <div id="heading-rev">
+            <p>Want to recieve regular quiz updates</p>
+            <h1 class="mh">Join our mailing list</h1>
+        </div>
+        <img src="public/images/newsletter.jpg" alt="">
+        <div id="newsletter">
+            <input type="email" name="email" id="email" placeholder="Enter your email to join our mailing list" required>
+            <button type="submit"><a>Yes,&nbsp;Please &nbsp;<i class="fa fa-arrow-circle-right"></i></a></button>
+        </div>
+        <p>Get ocassional updates and important reviews in your inbox.<br>No spam ever.</p>
+    </section> -->
+
+    <footer>
+        <a href="https://www.facebook.com/apple/"><i class="fa fa-facebook-official"></i></a>
+        <a href="https://www.instagram.com/apple/?hl=en"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/steve-jobs"><i class="fa fa-linkedin-square"></i></a>
+        <div id="copyright">
+            Copyright &nbsp; &copy; &nbsp;2020-21 &nbsp; &nbsp;www.QuizTown.com &nbsp;| &nbsp;All rights reserved!
+        </div>
+    </footer>
+
+    <script>
+        function passValue() {
+            var levelId = document.getElementById('levelValue').value;
+            localStorage.setItem("levelValue", levelId);
+            return false;
+        }
+    </script>
+
+</body>
+
+</html>

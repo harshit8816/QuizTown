@@ -1,0 +1,988 @@
+/* Css Reset */
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Grenze Gotisch', cursive;
+    background-color: rgb(127, 131, 134);
+}
+
+.mh{
+    margin: 0px;
+    font-size: 2.4rem;
+}
+
+blockquote{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+
+/* *index.html */
+
+
+/* ##Navigation menu */
+
+
+#navbar{
+    display: flex;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    color: honeydew;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    z-index: 2;
+    box-shadow: 0px 0px 20px 0px rgb(53, 50, 50);
+}
+
+#navbar::before{
+    content: "";
+    background: url('public/images/blue-bg.jpg') no-repeat   center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%; 
+    z-index: -1;
+    /* opacity: 0.81; */
+}
+
+#logo img{
+    margin: 9px 27px;
+    width: 100px;
+    height: auto;
+}
+
+#navbar ul{
+    display: flex;
+} 
+
+#navbar ul li{
+    list-style: none;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: honeydew;
+    font-size: 1.3rem;
+    padding: 6px;
+    border-radius: 12px;
+    margin: 0px 12px;
+}
+
+#navbar ul li a:hover{
+    color:rgb(42, 42, 109);
+}
+
+#navbar ul li a:active{
+    color: cyan;
+}
+
+
+/* #Home section */
+
+
+#home{
+    display: flex;
+    align-items: center;
+    margin-top: 180px;
+    height: 450px;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 400px;
+    margin-left: 150px;
+    margin-right: 30px;
+}
+@media screen and (min-width:1001px){
+    #text{
+        margin-left: 12%;
+        margin-right: 6%;
+    }   
+}
+
+/* #home::before{
+    content: "";
+    background:url('public/images/sea-bg.jpg')  no-repeat  center/cover;
+    width:100%;
+    height:775px;
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index:-2;
+    border-top-right-radius:640px ;
+    border-top-left-radius:640px ;
+} */
+
+.btn{
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 12px;
+    color: whitesmoke;
+    background-color: rgb(52, 116, 153);
+    outline: none;
+    padding: 6px;
+}
+
+.btn a{
+    color: whitesmoke;
+    padding: 6px 110px;
+    text-decoration: none;
+}
+
+.btn i{
+    padding: 4px;
+}
+
+.btn:hover{
+   background-color: rgb(60, 55, 134);
+   cursor: pointer;
+}
+
+#home img{
+    width: 370px;
+    height: auto;
+    border-radius: 9px;
+}
+
+@media screen and (min-width:1150px){
+    #home img{
+        width: 400px;
+    }
+    #text {
+        margin-left: 11%;
+        margin-right: 15%;
+    }
+}
+
+
+/* #Instruction section */
+
+
+#instructions{
+    height: 810px;
+    margin-bottom: 30px;
+} 
+
+#instructions button{
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 12px;
+    color: whitesmoke;
+    background-color: rgb(60, 55, 134);
+    outline: none;
+    padding: 9px;
+    /* position: absolute;
+    right: 60px;
+    width: 270px; */
+}
+
+#instructions button:hover{
+    background-color: rgb(52, 116, 153);
+    cursor: pointer;
+}
+
+#instructions button a{
+    padding: 6px 60px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+#instructions button i{
+    padding: 4px;
+}
+
+#ins-heading{
+    margin: 70px 0px;
+    margin-left: 90px;
+}
+
+#instruction-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    height: 420px;
+    width: 250px;
+    border-radius: 20px;
+    padding: 27px;
+    margin:20px;
+    text-align: center;
+    background-color:rgb(136, 176, 223);
+}
+
+
+/* ##Review section */
+
+
+#review{
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+#review p{
+    margin: 0px;
+    margin-top: 30px;
+    color: rgb(107, 201, 255);
+    text-align: center;
+    
+}
+
+#review img{
+    width: 400px;
+    height: auto;
+    border-radius: 22px;
+    margin: 45px auto;
+}
+
+#heading-rev{
+    text-align: center;
+}
+
+#newsletter{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+#newsletter input{
+       padding-left: 10px;
+       font-family: 'Kalam', cursive;
+       width: 60%;
+       border-radius: 18px;
+       border: none;
+       font-size: 1.1rem;
+       outline: none;
+}
+
+#newsletter button{
+    font-family: 'Kalam', cursive;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 12px;
+    color: whitesmoke;
+    background-color: rgb(52, 116, 153);
+    outline: none;
+    padding: 9px 18px;
+    margin-left: 15px;
+}
+
+#newsletter button i{
+    padding: 4px;
+}
+
+#newsletter button:hover{
+   background-color: rgb(60, 55, 134);
+   cursor: pointer;
+}
+
+
+/* ##Footer */
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 0px;
+    text-align: center;
+    position: relative;
+    bottom: 0px; 
+    
+}
+
+footer i{
+    margin: 12px;
+    font-size: 2.1rem;
+    color: rgb(60, 55, 134);
+}
+
+footer i:hover{
+    color: rgb(52, 116, 153);
+}
+
+
+/* *about.html */
+
+
+/* #about section */
+
+#about-h{
+    margin: 180px auto;
+    text-align: center;
+    font-size: 3.6rem;
+}
+
+#about-boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.about-box{
+    height: 660px;
+    width: 360px;
+    border-radius: 20px;
+    padding: 27px;
+    margin:20px;
+    text-align: center;
+    background-color:rgb(136, 176, 223);
+}
+
+.about-box img{
+    width: 100%;
+}
+
+#about{
+    text-align: center;
+}
+
+#about button{
+    width: 180px;
+   border-radius: 9px;
+   border: 2px solid black;
+   outline: none;
+   font-size: 1.1rem;
+   padding: 9px;
+   cursor: pointer;
+}
+
+#about button:hover{
+    color: white;
+    background-color: cadetblue;
+    border: none;
+    box-shadow: 0px 0px 9px 1px black;
+}
+
+#p-hide{
+    display: none;
+}
+#hide-i{
+    display: none;
+}
+
+#about button i{
+    padding: 6px;
+}
+
+.start{
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(60, 55, 134);
+    outline: none;
+    padding: 12px 18px;
+    margin: 30px;
+}
+
+.start a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 6px;
+}
+
+.start i{
+    padding: 0px 7px;
+}
+.start:hover{
+    background-color: rgb(52, 116, 153);
+}
+
+/* #team section */
+
+#team{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 150px 0px;
+}
+#team p{
+    /* color: rgb(84, 34, 150); */
+    color: rgb(107, 201, 255);
+    margin: 0px;
+}
+
+#img-team{
+    border: 2px solid rgb(186, 229, 247);
+    border-radius: 12px;
+    width: 20%;
+    padding: 27px;
+    margin: 40px;
+    transition: all 1s ease-in-out 0.3s;
+}
+#img-team:hover{
+    box-shadow: 2px 2px 30px 10px black;
+}
+
+#team img{
+    width: 100%;
+    height: 270px;
+    transition: all 1s ease-in-out 0.3s;
+}
+
+#team img:hover{
+    opacity: 0.72;
+}
+
+
+/* *Contact.html*/
+
+
+/* #contact section */
+
+
+#contact{
+    color: white; 
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#contact-box{
+    width: fit-content;
+    padding-bottom: 34px;
+}
+
+#contact-box input, 
+#contact-box textarea{
+    margin-left: 9%;
+    width: 100%;
+    max-width: 600px;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 75vw;
+}
+
+.form-group{
+    margin: 12px;
+}
+
+
+#ch{
+    margin-top: 180px;
+    font-size: 3.6rem;
+    text-align: center;
+}
+
+#c-h p , #contact p{
+    text-align: center;
+    color:  rgb(107, 201, 255);
+}
+
+
+#c-h h3{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+#contact img{
+    width: 75%;
+    height: auto;
+    border-radius: 36px;
+    margin: 30px 0px;
+}
+
+
+.form-group button , .rform-group button , .sform-group button{
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 12px;
+    color: whitesmoke;
+    background-color: rgb(60, 55, 134);
+    outline: none;
+    padding: 9px; 
+    margin-left: 90px;
+    /* width: 270px; */
+    width: 70%;
+    max-width: 270px;
+}
+
+.form-group button i , .rform-group button i , .sform-group button i{
+    padding-left: 9px;
+}
+
+.form-group button:hover , .rform-group button:hover , .sform-group button:hover{
+    background-color: rgb(52, 116, 153);
+    cursor: pointer;
+}
+
+/* #mail section */
+
+#mail button{
+    font-family: 'Kalam', cursive;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 12px;
+    color: whitesmoke;
+    background-color: rgb(52, 116, 153);
+    outline: none;
+    padding: 4px 18px;
+    margin-left: 15px;
+}
+
+#mail button a{
+text-decoration: none;
+color: white;
+}
+
+#mail button i{
+    padding: 12px;
+}
+
+#mail button:hover{
+   background-color: rgb(60, 55, 134);
+   cursor: pointer;
+}
+
+
+/* *register.html */
+
+
+/* #signup section */
+
+
+#register{
+        height: 1100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+#r-img{
+    margin: 20px;
+    /* margin-left: 490px; */
+}
+
+#r-img img{
+    width: 98%;
+    max-width: 360px;
+    border-radius: 270px;
+}
+
+.rform-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#radio{
+    display: block;
+}
+
+.rform-group input{
+    /* width: 475px; */
+    max-width: 450px;
+    width: 75%;
+    margin: 12px;
+    padding: 6px;
+    border: none;
+    border-radius: 9px;
+}
+
+#signin button ,#signup button{
+    font-family: 'Kalam', cursive;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 12px;
+    color: whitesmoke;
+    background-color: rgb(52, 116, 153);
+    outline: none;
+    padding: 9px 9px;
+}
+
+
+#signin  button a ,#signup button a{
+    text-decoration: none;
+    color: white;
+}
+    
+#signin button i ,#signup button i{
+        padding: 6px;
+}
+    
+#signin button:hover ,#signup button:hover{
+       background-color: rgb(60, 55, 134);
+       cursor: pointer;
+}
+
+
+/* *signin.html */
+
+
+/* #siginin section */
+
+
+#signin-window{
+    background-color: rgb(127, 131, 134);
+    width: 72vw;
+    height: 1040px;
+    margin: 60px auto;
+    box-shadow: 4px 4px 120px 120px rgb(53, 50, 50);
+}
+
+#close{
+    float: right;
+    margin: 12px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+#close:hover{
+    color: honeydew;
+    cursor: pointer;
+}
+
+#s-h{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#s-h h3{
+    color: rgb(52, 116, 153);
+}
+
+#signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sform-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sform-group input{
+    width: 475px;
+    margin: 18px;
+    padding: 6px;
+    border: none;
+    border-radius: 9px;
+}
+
+#s-img{
+    margin: 20px;
+    /* margin-left: 300px; */
+}
+
+#s-img img{
+    width: 360px;
+    border-radius: 270px;
+}
+
+
+/* *instruction.html */
+
+
+#i-img{
+    margin: 20px;
+    /* margin-left: 495px; */
+}
+
+#i-img img{
+    width: 360px;
+    border-radius: 270px;
+    margin-left: 36%;
+}
+
+#inst{
+    margin: 120px 180px;
+}
+
+#ins-btn {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    margin-left: 32%;
+    width: 37%;
+}
+
+#inst li{
+    font-size: 1.8rem;
+}
+
+
+#categories{
+    font-size: 1.8rem;
+    margin-left: 90px;
+    /* display: flex; */
+}
+
+#cate{
+    display: flex;
+    flex-direction: column;
+    font-size: 2.2rem;
+    margin-left: 6%;
+}
+
+.myCat{
+    width: 60%;
+}
+
+.myCat img{
+    width: 100%;
+}
+
+#cat{
+    display: flex;
+}
+
+@media screen and (max-width:700px){
+    #cat{
+        flex-direction: column;
+    }
+   
+}
+
+@media screen and (min-width:700px){
+    #c-img img {
+        margin-top: 45px;
+    }
+    #level-box{
+        grid-gap:2rem;
+        grid-template-columns: repeat(2,auto);
+        /* margin: 5px; */
+    }
+}
+
+#cat-h{
+    font-size: 3rem;
+    margin: 40px;
+    text-align: center;
+}
+
+#c-img{
+    /* width: 75%; */
+    /* margin-top: 360px; */
+    margin: 0px 60px;
+    margin-left: -30px;
+}
+
+#c-img img{
+    width: 81%;
+    margin-bottom: 60px;
+}
+
+
+/* Dropdown */
+
+.dropbtn {
+    background: none;
+    color: white;
+    padding: 16px;
+    border: none;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(46, 80, 129);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: honeydew;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: honeydew; color:black;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {color:rgb(42, 42, 109);}
+
+
+/* Scoring */
+
+#scoring-rules{
+    font-size: 1.8rem;
+    margin: 90px;
+}
+
+
+
+#back-ins{
+    text-align: center;
+}
+
+
+#c-h img{
+    width: 360px;
+    margin-left: 495px;
+    border-radius: 45px;
+    box-shadow: 0px 0px 9px 1px black;
+}
+
+#level-box{
+      display: grid;
+      /* grid-gap:2rem; */
+      grid-template-columns: repeat(5,auto);
+      /* margin: 40px; */
+}
+
+#levelValue {
+    font-size: 1.3rem;
+    border-radius: 6px;
+    width: 81%;
+    margin-left: 10%;
+    padding: 6px;
+}
+
+
+#level-h {
+    font-size: 1.5rem;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+
+.l-box{
+    /* height: 150px;
+    width: 150px; */
+    border-radius: 20px;
+    padding: 22px;
+    margin:27px;
+    text-align: center;
+    background-color:rgb(136, 176, 223);
+}
+
+.l-box:hover{
+    box-shadow: 0px 0px 20px 1px black;
+    color:honeydew;
+    background-color:rgb(46, 80, 129);
+    cursor: pointer;
+}
+
+#level-box a{ 
+    color: black;
+    text-decoration: none;
+}
+
+/* categories.html */
+
+#cate-container{
+    display: flex;
+    /* flex-direction: column; */
+}
+
+#cate input{
+    font-family: 'Grenze Gotisch', cursive;
+     width: 27%;
+     zoom: 1.1;
+     color: cornsilk;
+     font-size: 1.2rem;
+    }
+    
+#start-cat{
+        border: 2px solid rgb(36, 34, 34);
+        background-color: rgb(52, 116, 153);
+        margin: 30px 150px;
+        outline: none;
+    border-radius: 12px;
+    font-size: 1.5rem;
+}
+#start-cat:hover{
+    background-color: rgb(60, 55, 134);
+    border: 2px solid white;
+    /* border: none; */
+    color: white;
+}
+
+/* quiz.html */
+/* this section contains the styling of quiz.html which interfere with responsiveness of page due to precedence of internal css over external css */
+
+#container {
+    display: flex;
+}
+
+#container img {
+    width: 30%;
+    margin: 54px;
+    max-height: 360px;
+    border-radius: 12px;
+    opacity: 0.9;
+}
+
+#q-container {
+    width: 51%;
+    margin: 0px auto;
+    margin-top: 40px;
+    margin-bottom: 75px;
+    padding: 30px;
+    box-shadow: 0px 0px 4px 2px black;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.answer {
+    border: 2px solid royalblue;
+    background-color: gainsboro;
+    font-size: 1.8rem;
+    border-radius: 9px;
+    margin: 10px 40px;
+}
+
+.answer:hover {
+    background-color: turquoise;
+}
+
+#chead {
+    margin-left: 20px;
+}
+
+#c-heading {
+    margin: 20px 0px;
+    display: flex;
+}
+
+#c-heading p {
+    margin-left: 20px;
+    /* text-align: center; */
+    font-size: 1.5rem;
+    color: rgb(69, 8, 112);
+}
+
+.socials{
+    font-size: 2rem;
+    margin: 15px;
+}
+
+.socials:hover{
+    color: turquoise;
+}

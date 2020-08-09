@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levels:QuizTown</title>
+    <link rel="icon" href="public/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Itim&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://kit.fontawesome.com/a6d3a7fa97.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="/phone.css">
+    <style>
+        body {
+            font-family: 'Grenze Gotisch', cursive;
+            font-weight: 900;
+        }
+
+        .progress {
+            width: 90%;
+            border: 2px solid rgb(61, 60, 60);
+            height: 30px;
+            font-size: 1.3rem;
+        }
+
+        .nav-btn {
+            font-size: 1.5rem;
+            border: none;
+            background-color: rgb(38, 148, 212);
+            border-radius: 9px;
+            color: azure;
+            margin: 20px;
+        }
+
+        .resultH {
+            color: rgb(38, 148, 212);
+        }
+
+        .nav-btn:hover {
+            outline: none;
+            background-color: rgb(69, 8, 112);
+        }
+
+        .nav-btn {
+            padding: 4px 18px;
+        }
+
+        #btnNext {
+            float: right;
+        }
+
+        #btnPrevious {
+            float: left;
+        }
+
+        #quizHeader {
+            /* color: rgb(69, 8, 112); */
+            color: rgb(46, 162, 230);
+        }
+
+        #Submit {
+            align-self: center;
+            background-color: rgb(69, 8, 112);
+        }
+
+        #Submit:hover {
+            background-color: rgb(38, 148, 212);
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .selectAnswer {
+            /* background-color: greenyellow; */
+            color: rgb(69, 8, 112);
+            font-weight: 600;
+        }
+
+        .answer-btn {
+            /* padding: 10px; */
+            cursor: pointer;
+            display: inline-block;
+            width: 200px;
+            outline: none;
+        }
+
+
+        .correct {
+            color: green;
+            margin-left: 20px;
+        }
+
+        .wrong {
+            color: red;
+            margin-left: 20px;
+        }
+
+        #close {
+            font-size: 2rem;
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            /* margin-right: 15px; */
+        }
+
+        #close:hover {
+            color: white;
+            /* color: black; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="c-heading">
+        <a id="logo" class="logo-q" href="/"><img src="public/images/logo-new1.png" alt="Quiz Town"></a>
+        <a href="/quizlevels"><i class="fa fa-window-close-o" id="close"></i></a>
+        <div>
+            <h1 id="chead">Welcome to the world of Quizzes : QuizTown</h1>
+            <p>Test your smarts with these fun quizzes</p>
+        </div>
+    </div>
+    <section id="container">
+
+        <img id="categoryWiseImage" src="" alt="">
+
+        <div id="q-container">
+
+            <div class="header">
+                <h2 id="quizHeader"></h2>
+            </div>
+            <div id="question">
+                <h2 id="questions"></h2>
+            </div>
+            <div id="answer">
+
+            </div>
+            <div class="pageMovement">
+                <button class="nav-btn " id="btnPrevious">Previous</button>
+                <button class="nav-btn " id="btnNext">Next</button>
+            </div>
+            <div class="progress">
+                <div id="progress-bar" class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                    style="width: 50%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <button class="nav-btn" id="Submit">Submit Response</button>
+        </div>
+
+
+    </section>
+
+    <script type="text/javascript" src="/data.js"></script>
+    <script type="text/javascript" src="/quizScript.js"></script>
+</body>
+
+</html>

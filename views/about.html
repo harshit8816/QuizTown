@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Quiz Town</title>
+    <link rel="icon" href="public/images/favicon.ico" type="image/x-icon">
+    <link type='text/css' rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="/phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Itim&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
+    <script type='text/javascript' src="https://kit.fontawesome.com/a6d3a7fa97.js" crossorigin="anonymous"></script>
+
+    <script type='text/javascript'>
+        function toggleHide(){
+        let paraToHide= document.getElementById('p-hide');
+        let aContent= document.getElementById('hide-a');
+        let iContent= document.getElementById('hide-i');
+  
+        if(paraToHide.style.display=='none'){
+          paraToHide.style.display='inline-block';
+          aContent.style.display='none';
+          iContent.style.display='inline-block';
+      }
+      else{
+          paraToHide.style.display='none';
+          iContent.style.display='none';
+          aContent.style.display='inline-block';
+        }
+      }
+  
+    </script>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <a  id="logo" href="/"><img src="public/images/logo-new1.png" alt="Quiz Town"></a>
+    <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/instruction">Start Now</a></li>
+        <!-- <li><a href="/register">Register Now</a></li> -->
+        <li><a href="/contact">Contact Us</a></li>
+        <!-- <a href=""><i class="fa fa-sign-out"></i></a> -->
+        <li class="dropdown">
+            <a class="dropbtn">Categories &nbsp; <i class="fa fa-chevron-circle-down"></i></a>
+            <div class="dropdown-content">
+                <a href="/instruction">Art and Literature</a>
+                <a href="/instruction">General Knowledge</a>
+                <a href="/instruction">Geography</a>
+                <a href="/instruction">History</a>
+                <a href="/instruction">Music</a>
+                <a href="/instruction">Science and Nature</a>
+                <a href="/instruction">Sport</a>
+                <a href="/instruction">Tie Break</a>
+                <a href="/instruction">TV and Films</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+    <h1 id="about-h">About Us</h1>
+    <section id="about-boxes">
+        <div class="about-box" id="box-1">
+            <h2>We Are QuizTown</h2>
+            <img src="public/images/about.jpg" alt="">
+            <p>We adore quality quizzes and provide you the same so that you enjoy your time to its fullest, and enhance
+                your thinking and interpretation skills.
+                We at QuizTown are enthusiastic about presenting world class quizzes and trivias to you.<br>
+                So enjoy your time.<br>
+                We are serving you with our astounding content since 2020.
+            </p>
+        </div>
+        <div class="about-box" id="box-2">
+            <h2>Trivia Enthusiasts</h2>
+            <img src="public/images/woman-son.jpg" alt="">
+            <p>We rule the heart of our users with our fascinating trivias and brain-storming quizzes.
+                We are Trivia enthusiasts!
+                We love to please you and share with you our most amazing trivias,selected by our panel especially for
+                you.
+                Navigate the adventurous town of quizzes with us-QuizTown!
+            </p>
+        </div>
+    </section>
+    
+    <section id="about">
+        <button onclick="toggleHide()"><a id="hide-a">Read more </a><i id="hide-i" class="fa fa-eye-slash"></i><i class="fa fa-chevron-circle-down"></i></button>
+        <p id="p-hide">A place to sharpen your mind and to measure growth in knowledge, abilities, and/or skills.
+        Quiz Town creates an atmosphere for mind sport wherein the players, either as individuals or in teams attempt
+            to answer questions.</p>
+            <br>
+            <button class="start"><a href="/instruction">Start Your journey now<i class="fa fa-arrow-circle-o-right"></i></a></button>
+    </section>
+
+    <hr>
+    <section id="team">
+        <p>Meet our small,But Amazing team</p>
+        <h1 class="mh">The minds behind Quiz Town</h1>
+        <div id="img-team">
+            <img src="public/images/hs-cartoon.jpg">
+            <p>Harshit Sharma</p>
+            <h2>Founder</h2>
+            <a class="socials" href="https://github.com/harshit8816"><i class="fa fa-github"></i></a>
+            <a class="socials" href="https://www.linkedin.com/in/harshit-sharma-945i/"><i class="fa fa-linkedin-square"></i></a>
+        </div>
+        <div id="text-team">
+            <p>And many more to join...</p>
+        </div>
+    </section>
+<!-- 
+    <hr>
+    <section id="review">
+        <div id="heading-rev">
+            <p>Want to recieve regular quiz updates</p>
+            <h1 class="mh">Join our mailing list</h1>
+        </div>
+        <img src="public/images/newsletter.jpg" alt="">
+        <div id="newsletter">
+            <input type="email" name="email" id="email" placeholder="Enter your email to join our mailing list" required>
+            <button type="submit"><a>Yes,&nbsp;Please &nbsp;<i class="fa fa-arrow-circle-right"></i></a></button>
+        </div>
+        <p>Get ocassional updates and important reviews in your inbox.<br>No spam ever.</p>
+    </section> -->
+    <footer>
+        <a href="https://www.facebook.com/apple/"><i class="fa fa-facebook-official"></i></a>
+        <a href="https://www.instagram.com/apple/?hl=en"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/steve-jobs"><i class="fa fa-linkedin-square"></i></a>
+        <div id="copyright">
+            Copyright &nbsp; &copy; &nbsp;2020-21 &nbsp; &nbsp;www.QuizTown.com &nbsp;| &nbsp;All rights reserved!
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
