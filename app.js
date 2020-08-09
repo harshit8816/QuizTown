@@ -109,6 +109,7 @@ const instruction = fs.readFileSync('./views/instruction.html');
 const style = fs.readFileSync('./views/index.css');
 const phone = fs.readFileSync('./views/phone.css');
 const data = fs.readFileSync('./views/data.js');
+const setting = fs.readFileSync('./views/settings.js');
 const quizScript = fs.readFileSync('./views/quizScript.js');
 
 
@@ -168,6 +169,10 @@ app.get('/phone.css', (req, res) => {
 app.get('/data.js', (req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/javascript' });
     res.end(data);
+});
+app.get('/settings.js', (req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/javascript' });
+    res.end(setting);
 });
 app.get('/quizScript.js', (req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/javascript' });
