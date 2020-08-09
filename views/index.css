@@ -986,3 +986,17 @@ color: white;
 .socials:hover{
     color: turquoise;
 }
+
+
+/* Settings in quiz.html */
+
+#settings i{
+    font-size: 2rem;
+}
+
+#settings{
+    font-size: 1.2rem;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+}
