@@ -91,7 +91,13 @@ function endQuiz() {
             }
             output = output + '<p>Question ' + (i + 1) + ' ' + questionResult + '</p> ';
         }
-        output += '<button class="start"><a href="/categories">Play again<i class="fa fa-play-circle-o"></i></a></button><p>Correct answers are ' + data[cateId][levelId][0].correct + ',' + data[cateId][levelId][1].correct + ',' + data[cateId][levelId][2].correct + ',' + data[cateId][levelId][3].correct + ',' + data[cateId][levelId][4].correct + '</p>';
+               var Correct1 = data[cateId][levelId][0].correct;
+        var Correct2 = data[cateId][levelId][1].correct;
+        var Correct3 = data[cateId][levelId][2].correct;
+        var Correct4 = data[cateId][levelId][3].correct;
+        var Correct5 = data[cateId][levelId][4].correct;
+
+        output += '<button class="start"><a href="/categories">Play again<i class="fa fa-play-circle-o"></i></a></button><p>Correct answers are  ' + data[cateId][levelId][0].answers[Correct1-1] + ' , ' + data[cateId][levelId][1].answers[Correct2-1] + ' , ' + data[cateId][levelId][2].answers[Correct3-1] + ' , ' + data[cateId][levelId][3].answers[Correct4-1] + ' , ' + data[cateId][levelId][4].answers[Correct5-1] + '</p>';
         output = output + '<p>Hey there , You scored ' + (correct * levelId) + ' points out of ' + (lengthofobject * levelId) + '</p></div> ';
         document.getElementById("q-container").innerHTML = output;
 
