@@ -98,7 +98,7 @@ function endQuiz() {
         var Correct5 = data[cateId][levelId][4].correct;
 
         output += '<button class="start"><a href="/categories">Play again<i class="fa fa-play-circle-o"></i></a></button><p>Correct answers are : </p> <p style="color:yellowgreen;"> ' + data[cateId][levelId][0].answers[Correct1-1] + ' , ' + data[cateId][levelId][1].answers[Correct2-1] + ' , ' + data[cateId][levelId][2].answers[Correct3-1] + ' , ' + data[cateId][levelId][3].answers[Correct4-1] + ' , ' + data[cateId][levelId][4].answers[Correct5-1] + '</p>';
-        output = output + '<p>Hey there , You scored ' + (correct * levelId) + ' points out of ' + (lengthofobject * levelId) + '</p></div> ';
+        output = output + '<p style="color:turquoise;">Hey there , You scored ' + (correct * levelId) + ' points out of ' + (lengthofobject * levelId) + '</p></div> ';
         document.getElementById("q-container").innerHTML = output;
 
     } else {
